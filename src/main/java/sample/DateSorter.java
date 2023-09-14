@@ -42,7 +42,7 @@ public class DateSorter {
         }
         //sort dates with the character r in ascending order
         storageOfMonthsWithR.sort(LocalDate::compareTo);
-        //sort dates with the character r in descending order
+        //sort dates without the character r in descending order
         storageOfMonthsWithoutR.sort((o2, o1) -> {
             int cmp = (o1.getYear() - o2.getYear());
             if (cmp == 0) {
